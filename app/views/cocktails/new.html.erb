@@ -1,1 +1,9 @@
-new.html.erb
+<div class=container>
+  <%= simple_form_for [ @cocktail ] do |f| %>
+   <%= f.label "Add a new cocktail" %>
+   <%= f.input :name %>
+   <%= f.submit "Add cocktail" %>
+  <% end %>
+<br>
+  <%= link_to "Back to cocktails", root_path %>
+</div>
